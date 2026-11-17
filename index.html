@@ -15,7 +15,9 @@
 <style>
 @font-face{font-family:"Brico";src:url(fonts/brico-vp.woff2) format("woff2");font-weight:600 800;font-display:swap}
 @font-face{font-family:"Hanken";src:url(fonts/hanken-vp.woff2) format("woff2");font-weight:400 700;font-display:swap}
-:root{--red:#D80000;--flag:#FF0000;--red-d:#BB0000;--ink:#16161A;--txt:#3A3B42;--mut:#5C5E66;--gray:#F2F3F5;--line:#E1E3E8;--foot:#141418;--g:clamp(16px,4vw,56px);--hh:64px;--wrap:min(1680px,100% - 2*var(--g));--hd:"Brico",system-ui,sans-serif;--bd:"Hanken",system-ui,sans-serif}
+@font-face{font-family:"BricoFB";src:local("Arial Bold"),local("Arial-BoldMT"),local("Arial");font-weight:600 800;size-adjust:92.2%;ascent-override:100.8%;descent-override:29.3%;line-gap-override:0%}
+@font-face{font-family:"HankenFB";src:local("Arial"),local("ArialMT");font-weight:400 700;size-adjust:100.4%;ascent-override:99.6%;descent-override:30.2%;line-gap-override:0%}
+:root{--red:#D80000;--flag:#FF0000;--red-d:#BB0000;--ink:#16161A;--txt:#3A3B42;--mut:#5C5E66;--gray:#F2F3F5;--line:#E1E3E8;--foot:#141418;--g:clamp(16px,4vw,56px);--hh:64px;--wrap:min(1680px,100% - 2*var(--g));--hd:"Brico","BricoFB",sans-serif;--bd:"Hanken","HankenFB",sans-serif}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--hh) + 8px)}
 body{margin:0;background:#fff;color:var(--txt);font:400 17px/1.6 var(--bd);-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -383,27 +385,27 @@ p{margin:0 0 1em}
     </div>
     <div class="tiles">
       <a class="tile" href="https://visitpoland.eu/offers-and-prices/">
-        <img src="img/jg-640.webp" srcset="img/jg-640.webp 640w, img/jg-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Town Square in Jelenia Góra" loading="lazy" decoding="async">
+        <img src="img/jg-640.webp" srcset="img/jg-400.webp 400w, img/jg-640.webp 640w, img/jg-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Town Square in Jelenia Góra" loading="lazy" decoding="async">
         <span class="tile-t"><b>Travel to Poland Planner &amp; Assistance</b><span>Flights to Wrocław, buses and trains to Jelenia Góra, tickets and opening hours, step by step.</span></span>
       </a>
       <a class="tile" href="https://visitpoland.eu/accommodation-location/">
-        <img src="img/house27-640.webp" srcset="img/house27-640.webp 640w, img/house27-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="House&#x27;27 in Zakopane" loading="lazy" decoding="async">
+        <img src="img/house27-640.webp" srcset="img/house27-400.webp 400w, img/house27-640.webp 640w, img/house27-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="House&#x27;27 in Zakopane" loading="lazy" decoding="async">
         <span class="tile-t"><b>Accommodation &amp; Location</b><span>Comfortable and nice accommodation chosen for your personal needs.</span></span>
       </a>
       <a class="tile" href="https://visitpoland.eu/sightseeing-attractions/">
-        <img src="img/chojnik-640.webp" srcset="img/chojnik-640.webp 640w, img/chojnik-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Chojnik Castle above Sobieszów" loading="lazy" decoding="async">
+        <img src="img/chojnik-640.webp" srcset="img/chojnik-400.webp 400w, img/chojnik-640.webp 640w, img/chojnik-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Chojnik Castle above Sobieszów" loading="lazy" decoding="async">
         <span class="tile-t"><b>Sightseeing &amp; Attractions</b><span>Castles, the valley of palaces and gardens, Karpacz and Szklarska Poręba.</span></span>
       </a>
       <a class="tile" href="https://visitpoland.eu/polish-food-tour/">
-        <img src="img/bialowieski-640.webp" srcset="img/bialowieski-640.webp 640w, img/bialowieski-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Restaurant of Hotel Białowieski" loading="lazy" decoding="async">
+        <img src="img/bialowieski-640.webp" srcset="img/bialowieski-400.webp 400w, img/bialowieski-640.webp 640w, img/bialowieski-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Restaurant of Hotel Białowieski" loading="lazy" decoding="async">
         <span class="tile-t"><b>Polish Food Tour</b><span>Pierogi, żurek, rosół and placki ziemniaczane in local eateries.</span></span>
       </a>
       <a class="tile" href="https://visitpoland.eu/cycling-holidays-in-poland/">
-        <img src="img/czeskie-640.webp" srcset="img/czeskie-640.webp 640w, img/czeskie-960.webp 616w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="616" height="462" alt="Karkonosze mountains on a cycling route" loading="lazy" decoding="async">
+        <img src="img/czeskie-640.webp" srcset="img/czeskie-400.webp 400w, img/czeskie-640.webp 640w, img/czeskie-960.webp 616w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Karkonosze mountains on a cycling route" loading="lazy" decoding="async">
         <span class="tile-t"><b>Cycling holidays in Poland</b><span>Around 50 road routes and as many for MTB and Enduro around Jelenia Góra.</span></span>
       </a>
       <a class="tile" href="https://visitpoland.eu/other-activities/">
-        <img src="img/sniezka-640.webp" srcset="img/sniezka-640.webp 640w, img/sniezka-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Observatory on Śnieżka, 1603 m" loading="lazy" decoding="async">
+        <img src="img/sniezka-640.webp" srcset="img/sniezka-400.webp 400w, img/sniezka-640.webp 640w, img/sniezka-960.webp 960w" sizes="(min-width:1800px) 16vw, (min-width:900px) 31vw, 78vw" width="640" height="480" alt="Observatory on Śnieżka, 1603 m" loading="lazy" decoding="async">
         <span class="tile-t"><b>Other activities</b><span>Hiking, ski and snowboard weeks, Golden Polish Autumn.</span></span>
       </a>
     </div>
@@ -455,47 +457,47 @@ p{margin:0 0 1em}
     </div>
     <div class="tor trips" id="trips" data-tor>
       <a class="trip" href="https://visitpoland.eu/american-cycling-trip-2015-sladami-krzysztofa-kolumba/">
-        <img src="img/samerica-640.webp" srcset="img/samerica-640.webp 640w, img/samerica-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="South America cycling trip 2015" loading="lazy" decoding="async">
+        <img src="img/samerica-640.webp" srcset="img/samerica-400.webp 400w, img/samerica-640.webp 640w, img/samerica-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="South America cycling trip 2015" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">15 000 km</b><span lang="pl">South America Cycling Trip</span><span class="yr">2015</span></span>
       </a>
       <a class="trip" href="https://visitpoland.eu/wyprawa-po-azji-nowej-zelandii-australii-2017-15-000-km/">
-        <img src="img/anza-640.webp" srcset="img/anza-640.webp 640w, img/anza-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Asia, New Zealand and Australia cycling trip 2017" loading="lazy" decoding="async">
+        <img src="img/anza-640.webp" srcset="img/anza-400.webp 400w, img/anza-640.webp 640w, img/anza-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Asia, New Zealand and Australia cycling trip 2017" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">15 000 km</b><span lang="pl">Azja, Nowa Zelandia, Australia</span><span class="yr">2017</span></span>
       </a>
       <a class="trip" href="https://visitpoland.eu/wyprawa-rowerowa-szlakiem-stolic-europy-2010-2011-13-000-km/">
-        <img src="img/stolice-640.webp" srcset="img/stolice-640.webp 640w, img/stolice-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Cycling trip through European capitals 2010/2011" loading="lazy" decoding="async">
+        <img src="img/stolice-640.webp" srcset="img/stolice-400.webp 400w, img/stolice-640.webp 640w, img/stolice-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Cycling trip through European capitals 2010/2011" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">13 000 km</b><span lang="pl">Szlakiem stolic Europy</span><span class="yr">2010/2011</span></span>
       </a>
       <a class="trip" href="https://visitpoland.eu/balkany-3931-km-wrzesien-pazdziernik-2026/">
-        <img src="img/balkany-640.webp" srcset="img/balkany-640.webp 640w, img/balkany-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Balkans cycling trip 2026" loading="lazy" decoding="async">
+        <img src="img/balkany-640.webp" srcset="img/balkany-400.webp 400w, img/balkany-640.webp 640w, img/balkany-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Balkans cycling trip 2026" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">3931 km</b><span lang="pl">Bałkany</span><span class="yr">wrzesień-październik 2026</span></span>
       </a>
       <a class="trip" href="https://visitpoland.eu/wyprawa-dookola-pllwowdruskiennikiszlak-odra-nysa-3900-km/">
-        <img src="img/dookola-640.webp" srcset="img/dookola-640.webp 640w, img/dookola-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Cycling trip around Poland" loading="lazy" decoding="async">
+        <img src="img/dookola-640.webp" srcset="img/dookola-400.webp 400w, img/dookola-640.webp 640w, img/dookola-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Cycling trip around Poland" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">3900 km</b><span lang="pl">Dookoła Polski + Lwów + Druskienniki + Szlak Odra-Nysa</span></span>
       </a>
       <a class="trip" href="https://visitpoland.eu/skandynawia-2014-3150-km/">
-        <img src="img/skandynawia-640.webp" srcset="img/skandynawia-640.webp 640w, img/skandynawia-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Scandinavia cycling trip 2014" loading="lazy" decoding="async">
+        <img src="img/skandynawia-640.webp" srcset="img/skandynawia-400.webp 400w, img/skandynawia-640.webp 640w, img/skandynawia-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Scandinavia cycling trip 2014" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">3150 km</b><span lang="pl">Skandynawia</span><span class="yr">2014</span></span>
       </a>
       <a class="trip" href="https://visitpoland.eu/maroko-2015-3000-km/">
-        <img src="img/maroko-640.webp" srcset="img/maroko-640.webp 640w, img/maroko-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Morocco cycling trip 2015" loading="lazy" decoding="async">
+        <img src="img/maroko-640.webp" srcset="img/maroko-400.webp 400w, img/maroko-640.webp 640w, img/maroko-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Morocco cycling trip 2015" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">3000 km</b><span lang="pl">Maroko</span><span class="yr">2015</span></span>
       </a>
       <a class="trip" href="https://visitpoland.eu/islandia-2016/">
-        <img src="img/islandia-640.webp" srcset="img/islandia-640.webp 640w, img/islandia-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Iceland cycling trip 2016" loading="lazy" decoding="async">
+        <img src="img/islandia-640.webp" srcset="img/islandia-400.webp 400w, img/islandia-640.webp 640w, img/islandia-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 26vw, (min-width:700px) 42vw, 76vw" width="640" height="480" alt="Iceland cycling trip 2016" loading="lazy" decoding="async">
         <span class="trip-t"><b class="km">Ring Road</b><span lang="pl">Islandia</span><span class="yr">2016</span></span>
       </a>
     </div>
     <div class="micro">
       <div class="sub"><div><h3>Microtrips</h3><p>Road, gravel and MTB routes with photos and GPX files</p></div></div>
       <ul class="routes">
-        <li><a href="https://visitpoland.eu/strefa-mtb-sudety-4-kapitalne-trasy/"><img src="img/sudety-640.webp" srcset="img/sudety-640.webp 640w, img/sudety-960.webp 960w" sizes="120px" width="640" height="480" alt="Strefa MTB Sudety" loading="lazy" decoding="async"><span><b lang="pl">Strefa MTB Sudety</b><span>MTB · <span lang="pl">4 trasy</span></span></span></a></li>
-        <li><a href="https://visitpoland.eu/z-jeleniej-gorzy-do-miedzyzdrojow-szlak-odra-nysablue-velotrasa-pojezierzy-zachodnich-492-km/"><img src="img/jgmiedzy-640.webp" srcset="img/jgmiedzy-640.webp 640w, img/jgmiedzy-960.webp 960w" sizes="120px" width="640" height="480" alt="Z Jeleniej Góry do Międzyzdrojów" loading="lazy" decoding="async"><span><b lang="pl">Z Jeleniej Góry do Międzyzdrojów</b><span>Road · <span lang="pl">492 km</span></span></span></a></li>
-        <li><a href="https://visitpoland.eu/mazurska-petla-rowerowa-ok-300-km/"><img src="img/mazury-640.webp" srcset="img/mazury-640.webp 640w, img/mazury-960.webp 960w" sizes="120px" width="640" height="480" alt="Mazurska Pętla Rowerowa" loading="lazy" decoding="async"><span><b lang="pl">Mazurska Pętla Rowerowa</b><span>Gravel · <span lang="pl">ok. 300 km</span></span></span></a></li>
-        <li><a href="https://visitpoland.eu/dolina-baryczy-260-km-gravelowego-zlota/"><img src="img/barycz-640.webp" srcset="img/barycz-640.webp 640w, img/barycz-960.webp 960w" sizes="120px" width="640" height="480" alt="Dolina Baryczy" loading="lazy" decoding="async"><span><b lang="pl">Dolina Baryczy</b><span>Gravel · <span lang="pl">260 km</span></span></span></a></li>
-        <li><a href="https://visitpoland.eu/kaszuby-ok-230-km/"><img src="img/kaszuby-640.webp" srcset="img/kaszuby-640.webp 640w, img/kaszuby-960.webp 960w" sizes="120px" width="640" height="480" alt="Kaszuby" loading="lazy" decoding="async"><span><b lang="pl">Kaszuby</b><span>Gravel · <span lang="pl">ok. 230 km</span></span></span></a></li>
-        <li><a href="https://visitpoland.eu/czeskie-karkonosze-125-km/"><img src="img/czeskie-640.webp" srcset="img/czeskie-640.webp 640w, img/czeskie-960.webp 616w" sizes="120px" width="616" height="462" alt="Czeskie Karkonosze" loading="lazy" decoding="async"><span><b lang="pl">Czeskie Karkonosze</b><span>Gravel · <span lang="pl">125 km</span></span></span></a></li>
+        <li><a href="https://visitpoland.eu/strefa-mtb-sudety-4-kapitalne-trasy/"><img src="img/sudety-640.webp" srcset="img/sudety-400.webp 400w, img/sudety-640.webp 640w, img/sudety-960.webp 960w" sizes="120px" width="640" height="480" alt="Strefa MTB Sudety" loading="lazy" decoding="async"><span><b lang="pl">Strefa MTB Sudety</b><span>MTB · <span lang="pl">4 trasy</span></span></span></a></li>
+        <li><a href="https://visitpoland.eu/z-jeleniej-gorzy-do-miedzyzdrojow-szlak-odra-nysablue-velotrasa-pojezierzy-zachodnich-492-km/"><img src="img/jgmiedzy-640.webp" srcset="img/jgmiedzy-400.webp 400w, img/jgmiedzy-640.webp 640w, img/jgmiedzy-960.webp 960w" sizes="120px" width="640" height="480" alt="Z Jeleniej Góry do Międzyzdrojów" loading="lazy" decoding="async"><span><b lang="pl">Z Jeleniej Góry do Międzyzdrojów</b><span>Road · <span lang="pl">492 km</span></span></span></a></li>
+        <li><a href="https://visitpoland.eu/mazurska-petla-rowerowa-ok-300-km/"><img src="img/mazury-640.webp" srcset="img/mazury-400.webp 400w, img/mazury-640.webp 640w, img/mazury-960.webp 960w" sizes="120px" width="640" height="480" alt="Mazurska Pętla Rowerowa" loading="lazy" decoding="async"><span><b lang="pl">Mazurska Pętla Rowerowa</b><span>Gravel · <span lang="pl">ok. 300 km</span></span></span></a></li>
+        <li><a href="https://visitpoland.eu/dolina-baryczy-260-km-gravelowego-zlota/"><img src="img/barycz-640.webp" srcset="img/barycz-400.webp 400w, img/barycz-640.webp 640w, img/barycz-960.webp 960w" sizes="120px" width="640" height="480" alt="Dolina Baryczy" loading="lazy" decoding="async"><span><b lang="pl">Dolina Baryczy</b><span>Gravel · <span lang="pl">260 km</span></span></span></a></li>
+        <li><a href="https://visitpoland.eu/kaszuby-ok-230-km/"><img src="img/kaszuby-640.webp" srcset="img/kaszuby-400.webp 400w, img/kaszuby-640.webp 640w, img/kaszuby-960.webp 960w" sizes="120px" width="640" height="480" alt="Kaszuby" loading="lazy" decoding="async"><span><b lang="pl">Kaszuby</b><span>Gravel · <span lang="pl">ok. 230 km</span></span></span></a></li>
+        <li><a href="https://visitpoland.eu/czeskie-karkonosze-125-km/"><img src="img/czeskie-640.webp" srcset="img/czeskie-400.webp 400w, img/czeskie-640.webp 640w, img/czeskie-960.webp 616w" sizes="120px" width="640" height="480" alt="Czeskie Karkonosze" loading="lazy" decoding="async"><span><b lang="pl">Czeskie Karkonosze</b><span>Gravel · <span lang="pl">125 km</span></span></span></a></li>
       </ul>
       <p class="fbg">New routes appear first in the Facebook group: <a href="https://www.facebook.com/groups/656583218753084" rel="noopener">join the group</a>.</p>
     </div>
@@ -521,70 +523,70 @@ p{margin:0 0 1em}
     </div>
     <div class="tor cards" id="cards" data-tor>
       <article class="card" data-k="g">
-        <a href="https://visitpoland.eu/house27-zakopane/" class="card-a"><img src="img/house27-640.webp" srcset="img/house27-640.webp 640w, img/house27-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="House&#x27;27-Zakopane" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/house27-zakopane/" class="card-a"><img src="img/house27-640.webp" srcset="img/house27-400.webp 400w, img/house27-640.webp 640w, img/house27-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="House&#x27;27-Zakopane" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Guesthouses, B&amp;B</span>
           <h3><a href="https://visitpoland.eu/house27-zakopane/">House&#x27;27-Zakopane</a></h3>
           <ul class="hl" lang="pl"><li>Willa z historią</li><li>bywały tu znane osobistości</li><li>bliskość Krupówek i TPN</li><li>spokój i cisza</li><li>parking</li></ul>
         </div>
       </article>
       <article class="card" data-k="g">
-        <a href="https://visitpoland.eu/liberta-inn-zakopane/" class="card-a"><img src="img/liberta-640.webp" srcset="img/liberta-640.webp 640w, img/liberta-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Liberta INN Zakopane" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/liberta-inn-zakopane/" class="card-a"><img src="img/liberta-640.webp" srcset="img/liberta-400.webp 400w, img/liberta-640.webp 640w, img/liberta-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Liberta INN Zakopane" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Guesthouses, B&amp;B</span>
           <h3><a href="https://visitpoland.eu/liberta-inn-zakopane/">Liberta INN Zakopane</a></h3>
           <ul class="hl" lang="pl"><li>Czysto</li><li>kuchnia</li><li>400 m od Krupówek i 200 m od najstarszej restauracji w Zakopanem</li><li>parking</li></ul>
         </div>
       </article>
       <article class="card" data-k="h">
-        <a href="https://visitpoland.eu/st-christina-swieradow-zdroj/" class="card-a"><img src="img/christina-640.webp" srcset="img/christina-640.webp 640w, img/christina-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="St.Christina Świeradów Zdrój" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/st-christina-swieradow-zdroj/" class="card-a"><img src="img/christina-640.webp" srcset="img/christina-400.webp 400w, img/christina-640.webp 640w, img/christina-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="St.Christina Świeradów Zdrój" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Hotels &amp; SPA</span>
           <h3><a href="https://visitpoland.eu/st-christina-swieradow-zdroj/">St.Christina Świeradów Zdrój</a></h3>
           <ul class="hl" lang="pl"><li>Apartamenty rodzinne/biznesowe</li><li>bliskość szlaków</li><li>cisza i spokój</li><li>duży wybór dań</li></ul>
         </div>
       </article>
       <article class="card" data-k="c">
-        <a href="https://visitpoland.eu/zamek-w-rynie/" class="card-a"><img src="img/ryn-640.webp" srcset="img/ryn-640.webp 640w, img/ryn-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Zamek w Rynie" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/zamek-w-rynie/" class="card-a"><img src="img/ryn-640.webp" srcset="img/ryn-400.webp 400w, img/ryn-640.webp 640w, img/ryn-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Zamek w Rynie" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Castles</span>
           <h3><a href="https://visitpoland.eu/zamek-w-rynie/">Zamek w Rynie</a></h3>
           <ul class="hl" lang="pl"><li>Podróż w czasie</li><li>szyk i elegancja</li><li>zwiedzanie</li><li>b.smaczne jedzenie</li><li>dar dla pokoleń</li></ul>
         </div>
       </article>
       <article class="card" data-k="h">
-        <a href="https://visitpoland.eu/villa-garden-tykocin/" class="card-a"><img src="img/regent-640.webp" srcset="img/regent-640.webp 640w, img/regent-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Villa Regent-Tykocin" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/villa-garden-tykocin/" class="card-a"><img src="img/regent-640.webp" srcset="img/regent-400.webp 400w, img/regent-640.webp 640w, img/regent-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Villa Regent-Tykocin" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Hotels &amp; SPA</span>
           <h3><a href="https://visitpoland.eu/villa-garden-tykocin/">Villa Regent-Tykocin</a></h3>
           <ul class="hl" lang="pl"><li>Podlaski &quot;sznyt&quot;</li><li>świetna, żydowska kuchnia</li><li>bywali tutaj D.Szaflarska, J.Hoffman, K.Zanussi</li></ul>
         </div>
       </article>
       <article class="card" data-k="u">
-        <a href="https://visitpoland.eu/querion-immersyjna-przygoda-w-karkonoszach-piechowice/" class="card-a"><img src="img/querion-640.webp" srcset="img/querion-640.webp 640w, img/querion-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Querion-immersyjna przygoda w Karkonoszach (Piechowice)" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/querion-immersyjna-przygoda-w-karkonoszach-piechowice/" class="card-a"><img src="img/querion-640.webp" srcset="img/querion-400.webp 400w, img/querion-640.webp 640w, img/querion-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Querion-immersyjna przygoda w Karkonoszach (Piechowice)" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Unusual Places</span>
           <h3><a href="https://visitpoland.eu/querion-immersyjna-przygoda-w-karkonoszach-piechowice/">Querion-immersyjna przygoda w Karkonoszach (Piechowice)</a></h3>
           <ul class="hl" lang="pl"><li>Wielkoformatowe ekrany (w tym 1000-calowy)</li><li>animacje 4D/5D</li><li>bodźce wizualne i dźwiękowe</li></ul>
         </div>
       </article>
       <article class="card" data-k="g">
-        <a href="https://visitpoland.eu/willa-kazimierz-dolny/" class="card-a"><img src="img/kazimierz-640.webp" srcset="img/kazimierz-640.webp 640w, img/kazimierz-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Willa Kazimierz Dolny" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/willa-kazimierz-dolny/" class="card-a"><img src="img/kazimierz-640.webp" srcset="img/kazimierz-400.webp 400w, img/kazimierz-640.webp 640w, img/kazimierz-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Willa Kazimierz Dolny" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Guesthouses, B&amp;B</span>
           <h3><a href="https://visitpoland.eu/willa-kazimierz-dolny/">Willa Kazimierz Dolny</a></h3>
           <ul class="hl" lang="pl"><li>Butikowy charakter</li><li>basen i ogród</li><li>pyszne śniadania</li><li>kulturalna obsługa</li><li>parking</li></ul>
         </div>
       </article>
       <article class="card" data-k="u">
-        <a href="https://visitpoland.eu/muzeum-emigracji-gdynia/" class="card-a"><img src="img/gdynia-640.webp" srcset="img/gdynia-640.webp 640w, img/gdynia-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Muzeum Emigracji w Gdynii" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/muzeum-emigracji-gdynia/" class="card-a"><img src="img/gdynia-640.webp" srcset="img/gdynia-400.webp 400w, img/gdynia-640.webp 640w, img/gdynia-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Muzeum Emigracji w Gdynii" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Unusual Places</span>
           <h3><a href="https://visitpoland.eu/muzeum-emigracji-gdynia/">Muzeum Emigracji w Gdynii</a></h3>
           <ul class="hl" lang="pl"><li>Losy Polaków na obczyźnie</li><li>ciekawie i interaktywnie</li><li>lokalizacja w porcie</li></ul>
         </div>
       </article>
       <article class="card" data-k="h">
-        <a href="https://visitpoland.eu/hotel-bialowieski-bialowieza/" class="card-a"><img src="img/bialowieski-640.webp" srcset="img/bialowieski-640.webp 640w, img/bialowieski-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Hotel Białowieski-Białowieża" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/hotel-bialowieski-bialowieza/" class="card-a"><img src="img/bialowieski-640.webp" srcset="img/bialowieski-400.webp 400w, img/bialowieski-640.webp 640w, img/bialowieski-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Hotel Białowieski-Białowieża" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Hotels &amp; SPA</span>
           <h3><a href="https://visitpoland.eu/hotel-bialowieski-bialowieza/">Hotel Białowieski-Białowieża</a></h3>
           <ul class="hl" lang="pl"><li>Położenie</li><li>obiadokolacje w formie bufetu</li><li>własne wyroby</li><li>browar rzemieślniczy</li></ul>
         </div>
       </article>
       <article class="card" data-k="u">
-        <a href="https://visitpoland.eu/muzeum-motoryzacji-wena-w-olawie/" class="card-a"><img src="img/wena-640.webp" srcset="img/wena-640.webp 640w, img/wena-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Muzeum Motoryzacji Wena w Oławie" loading="lazy" decoding="async"></a>
+        <a href="https://visitpoland.eu/muzeum-motoryzacji-wena-w-olawie/" class="card-a"><img src="img/wena-640.webp" srcset="img/wena-400.webp 400w, img/wena-640.webp 640w, img/wena-960.webp 960w" sizes="(min-width:1800px) 19vw, (min-width:1100px) 24vw, (min-width:700px) 40vw, 80vw" width="640" height="480" alt="Muzeum Motoryzacji Wena w Oławie" loading="lazy" decoding="async"></a>
         <div class="card-b"><span class="cat">Unusual Places</span>
           <h3><a href="https://visitpoland.eu/muzeum-motoryzacji-wena-w-olawie/">Muzeum Motoryzacji Wena w Oławie</a></h3>
           <ul class="hl" lang="pl"><li>Bogata kolekcja aut polskich i zagranicznych</li><li>motory</li><li>rowery</li></ul>
@@ -614,9 +616,9 @@ p{margin:0 0 1em}
       <p class="drone">Castles, palaces and towns from above: <a href="https://visitpoland.eu/poland-by-drone/">Poland by Drone</a></p>
     </div>
     <div class="mos">
-      <button type="button" data-lb="town" data-src="img/jg-960.webp" data-cap="Town Hall in Jelenia Góra"><img src="img/jg-640.webp" srcset="img/jg-640.webp 640w, img/jg-960.webp 960w" sizes="(min-width:900px) 34vw, 60vw" width="640" height="480" alt="Town Hall in Jelenia Góra" loading="lazy"><span>Jelenia Góra</span></button>
-      <button type="button" data-lb="town" data-src="img/perla-960.webp" data-cap="The Pearl of the West in Szklarska Poręba"><img src="img/perla-640.webp" width="640" height="480" alt="The Pearl of the West in Szklarska Poręba" loading="lazy"><span>The Pearl of the West</span></button>
-      <button type="button" data-lb="town" data-src="img/dolina-960.webp" data-cap="The valley of Palaces and Gardens"><img src="img/dolina-640.webp" width="640" height="480" alt="The valley of Palaces and Gardens" loading="lazy"><span>Palaces and Gardens</span></button>
+      <button type="button" data-lb="town" data-src="img/jg-960.webp" data-cap="Town Hall in Jelenia Góra"><img src="img/jg-640.webp" srcset="img/jg-400.webp 400w, img/jg-640.webp 640w, img/jg-960.webp 960w" sizes="(min-width:900px) 34vw, 60vw" width="640" height="480" alt="Town Hall in Jelenia Góra" loading="lazy"><span>Jelenia Góra</span></button>
+      <button type="button" data-lb="town" data-src="img/perla-960.webp" data-cap="The Pearl of the West in Szklarska Poręba"><img src="img/perla-640.webp" srcset="img/perla-400.webp 400w, img/perla-640.webp 640w" sizes="(min-width:900px) 22vw, 36vw" width="640" height="480" alt="The Pearl of the West in Szklarska Poręba" loading="lazy"><span>The Pearl of the West</span></button>
+      <button type="button" data-lb="town" data-src="img/dolina-960.webp" data-cap="The valley of Palaces and Gardens"><img src="img/dolina-640.webp" srcset="img/dolina-400.webp 400w, img/dolina-640.webp 640w" sizes="(min-width:900px) 22vw, 36vw" width="640" height="480" alt="The valley of Palaces and Gardens" loading="lazy"><span>Palaces and Gardens</span></button>
     </div>
   </div>
 </section>
@@ -624,7 +626,7 @@ p{margin:0 0 1em}
 <section class="sec" id="about">
   <div class="wrap about">
     <figure>
-      <img src="img/maroko-640.webp" srcset="img/maroko-640.webp 640w, img/maroko-960.webp 960w" sizes="(min-width:900px) 45vw, 92vw" width="640" height="480" alt="Cyclists with panniers on a mountain road in Morocco" loading="lazy">
+      <img src="img/maroko-640.webp" srcset="img/maroko-400.webp 400w, img/maroko-640.webp 640w, img/maroko-960.webp 960w" sizes="(min-width:900px) 45vw, 92vw" width="640" height="480" alt="Cyclists with panniers on a mountain road in Morocco" loading="lazy">
       <figcaption>Maroko 2015, 3000 km on a bike</figcaption>
     </figure>
     <div>
