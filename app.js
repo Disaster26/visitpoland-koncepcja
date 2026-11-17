@@ -30,7 +30,7 @@
   document.getElementById('next').addEventListener('click',function(){idz(cur+1,true)});
   var x0=null;hero.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
   hero.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>60)idz(cur+(d<0?1:-1),true);x0=null});
-  function start(){if(!ruch){hero.classList.add('stop');return}laduj(1);tm=setInterval(function(){if(!document.hidden)idz(cur+1)},6500)}
+  function start(){if(!ruch){hero.classList.add('stop');return}hero.classList.add('run');laduj(1);tm=setInterval(function(){if(!document.hidden)idz(cur+1)},6500)}
   if(document.readyState==='complete')setTimeout(start,3500);else addEventListener('load',function(){setTimeout(start,3500)});
 
   /* tory przewijane */
