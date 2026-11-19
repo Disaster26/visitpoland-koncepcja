@@ -346,6 +346,23 @@ p{margin:0 0 1em}
   .hero .lead{margin-top:14px}
 }
 
+/* galeria: mozaika + pelny ekran */
+.town{grid-template-columns:minmax(0,1fr)}
+.town>div:first-child{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,6vw,120px);align-items:end}
+.town .facts{margin-top:0}.town .drone{grid-column:1/-1}
+.town>.gal{grid-column:1/-1}
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,14vw,260px);grid-auto-flow:dense;gap:12px;margin-top:clamp(8px,2vw,24px)}
+.gal .g{position:relative;padding:0;border:0;border-radius:6px;overflow:hidden;cursor:zoom-in;background:#d9dbe0;display:block}
+.gal .big{grid-column:span 2;grid-row:span 2}.gal .wide{grid-column:span 2}.gal .tall{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.gal .g::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,12,16,.75) 0%,rgba(12,12,16,0) 45%);opacity:0;transition:opacity .35s}
+.gal span{position:absolute;left:14px;right:14px;bottom:12px;z-index:2;color:#fff;font-weight:600;font-size:15px;text-align:left;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+.gal .g:hover img,.gal .g:focus-visible img{transform:scale(1.05)}
+.gal .g:hover::after,.gal .g:hover span,.gal .g:focus-visible::after,.gal .g:focus-visible span{opacity:1;transform:none}
+.gal .big span{opacity:1;transform:none;font-size:17px}.gal .big::after{opacity:1}
+.gal-n{grid-column:1/-1;margin:4px 0 0;font-size:15px;color:var(--mut)}
+@media (max-width:899px){.town>div:first-child{grid-template-columns:minmax(0,1fr)}.town .facts{margin-top:24px}.gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:34vw;gap:8px}.gal span{opacity:1;transform:none;font-size:13.5px;left:10px;bottom:8px}.gal .g::after{opacity:1}}
+
 @media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
 @media (max-width:899px){.fg{grid-template-columns:repeat(2,minmax(0,1fr))}.fg>div:first-child{grid-column:1/-1}}
 
@@ -670,10 +687,15 @@ p{margin:0 0 1em}
       </ul>
       <p class="drone">Castles, palaces and towns from above: <a href="https://visitpoland.eu/poland-by-drone/">Poland by Drone</a></p>
     </div>
-    <div class="mos">
-      <button type="button" data-lb="town" data-src="../img/jg-960.webp" data-cap="Town Hall in Jelenia Góra"><img src="../img/jg-640.webp" srcset="../img/jg-400.webp 400w, ../img/jg-640.webp 640w, ../img/jg-960.webp 960w" sizes="(min-width:900px) 34vw, 60vw" width="640" height="480" alt="Town Hall in Jelenia Góra" loading="lazy"><span>Jelenia Góra</span></button>
-      <button type="button" data-lb="town" data-src="../img/perla-960.webp" data-cap="The Pearl of the West in Szklarska Poręba"><img src="../img/perla-640.webp" srcset="../img/perla-400.webp 400w, ../img/perla-640.webp 640w" sizes="(min-width:900px) 22vw, 36vw" width="640" height="480" alt="The Pearl of the West in Szklarska Poręba" loading="lazy"><span>The Pearl of the West</span></button>
-      <button type="button" data-lb="town" data-src="../img/dolina-960.webp" data-cap="The valley of Palaces and Gardens"><img src="../img/dolina-640.webp" srcset="../img/dolina-400.webp 400w, ../img/dolina-640.webp 640w" sizes="(min-width:900px) 22vw, 36vw" width="640" height="480" alt="The valley of Palaces and Gardens" loading="lazy"><span>Palaces and Gardens</span></button>
+    <div class="gal">
+      <button type="button" class="g big" data-lb="town" data-src="../img/jg-960.webp" data-cap="Town Hall in Jelenia Góra"><img src="../img/jg-640.webp" srcset="../img/jg-400.webp 400w, ../img/jg-640.webp 640w, ../img/jg-960.webp 960w" sizes="(min-width:900px) 50vw, 100vw" width="640" height="480" alt="Town Hall in Jelenia Góra" loading="lazy" decoding="async"><span>Town Hall in Jelenia Góra</span></button>
+      <button type="button" class="g " data-lb="town" data-src="../img/wang-960.webp" data-cap="Wang Church in Karpacz"><img src="../img/wang-640.webp" srcset="../img/wang-400.webp 400w, ../img/wang-640.webp 640w, ../img/wang-960.webp 960w" sizes="(min-width:900px) 25vw, 50vw" width="640" height="480" alt="Wang Church in Karpacz" loading="lazy" decoding="async"><span>Wang Church in Karpacz</span></button>
+      <button type="button" class="g " data-lb="town" data-src="../img/sniezka-960.webp" data-cap="Observatory on Śnieżka, 1603 m"><img src="../img/sniezka-640.webp" srcset="../img/sniezka-400.webp 400w, ../img/sniezka-640.webp 640w, ../img/sniezka-960.webp 960w" sizes="(min-width:900px) 25vw, 50vw" width="640" height="480" alt="Observatory on Śnieżka, 1603 m" loading="lazy" decoding="async"><span>Observatory on Śnieżka, 1603 m</span></button>
+      <button type="button" class="g tall" data-lb="town" data-src="../img/chojnik-960.webp" data-cap="Chojnik Castle above Sobieszów"><img src="../img/chojnik-640.webp" srcset="../img/chojnik-400.webp 400w, ../img/chojnik-640.webp 640w, ../img/chojnik-960.webp 960w" sizes="(min-width:900px) 25vw, 50vw" width="640" height="480" alt="Chojnik Castle above Sobieszów" loading="lazy" decoding="async"><span>Chojnik Castle above Sobieszów</span></button>
+      <button type="button" class="g " data-lb="town" data-src="../img/perla-960.webp" data-cap="The Pearl of the West in Szklarska Poręba"><img src="../img/perla-640.webp" srcset="../img/perla-400.webp 400w, ../img/perla-640.webp 640w, ../img/perla-960.webp 960w" sizes="(min-width:900px) 25vw, 50vw" width="640" height="480" alt="The Pearl of the West in Szklarska Poręba" loading="lazy" decoding="async"><span>The Pearl of the West in Szklarska Poręba</span></button>
+      <button type="button" class="g wide" data-lb="town" data-src="../img/dolina-960.webp" data-cap="The valley of Palaces and Gardens"><img src="../img/dolina-640.webp" srcset="../img/dolina-400.webp 400w, ../img/dolina-640.webp 640w, ../img/dolina-960.webp 711w" sizes="(min-width:900px) 25vw, 50vw" width="640" height="480" alt="The valley of Palaces and Gardens" loading="lazy" decoding="async"><span>The valley of Palaces and Gardens</span></button>
+      <button type="button" class="g " data-lb="town" data-src="../img/czeskie-960.webp" data-cap="Karkonosze mountains on a cycling route"><img src="../img/czeskie-640.webp" srcset="../img/czeskie-400.webp 400w, ../img/czeskie-640.webp 640w, ../img/czeskie-960.webp 616w" sizes="(min-width:900px) 25vw, 50vw" width="640" height="480" alt="Karkonosze mountains on a cycling route" loading="lazy" decoding="async"><span>Karkonosze mountains on a cycling route</span></button>
+      <p class="gal-n">7 photos · click to open full screen, swipe on the phone</p>
     </div>
   </div>
 </section>
