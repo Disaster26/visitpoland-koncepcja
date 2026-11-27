@@ -620,6 +620,9 @@ blockquote{margin:1.4em 0;padding:4px 0 4px 20px;border-left:4px solid var(--red
 .prose .mail{color:var(--ink);text-decoration:none}
 .ph figure img.por{object-position:50% 22%}
 .ph figure.small{max-width:640px;justify-self:end;width:100%}
+.idph{float:left;width:120px;height:auto;aspect-ratio:3/4;object-fit:contain;margin:4px 20px 10px 0;border-radius:4px;border:1px solid var(--line)}
+.ekg-r::after{background:linear-gradient(90deg,rgba(255,255,255,0) 0,#fff 8%,#FF2A2A 16%,#FF2A2A 20%,#fff 28%,rgba(255,255,255,0) 36%)}
+.ekg-l::after{background:linear-gradient(90deg,rgba(255,255,255,0) 64%,#fff 72%,#FF2A2A 80%,#FF2A2A 84%,#fff 92%,rgba(255,255,255,0) 100%)}
 .vlgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:28px;margin-bottom:40px}
 .vlg{margin:0}.vlg .lgbox img{width:min(100%,420px)}
 .vlg figcaption{display:flex;flex-direction:column;gap:6px;margin-top:14px;font-size:16px;color:var(--txt)}
@@ -659,7 +662,7 @@ blockquote{margin:1.4em 0;padding:4px 0 4px 20px;border-left:4px solid var(--red
   </nav>
 </header>
 <main id="main">
-<section class="ph">
+<section class="ph noimg">
   <div class="wrap">
     <div>
       <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="../">Home</a></li><li aria-current="page">Contact</li></ol></nav>
@@ -668,11 +671,11 @@ blockquote{margin:1.4em 0;padding:4px 0 4px 20px;border-left:4px solid var(--red
       <p class="lead">Hi, my name is Piotr. Write to me at <a href="mailto:hello@visitpoland.eu">hello@visitpoland.eu</a> or use the form below.</p>
       
     </div>
-    <figure class="small"><img class=por src="../assets/img/c/about-me-1-640.webp" srcset="../assets/img/c/about-me-1-640.webp 640w" sizes="(min-width:900px) 46vw, 100vw" width="640" height="853" alt="Piotr, Visit Poland" fetchpriority="high" decoding="async"></figure>
+    
   </div>
 </section><section class="sec ">
   <div class="wrap">
-<div class="contact"><div class="prose"><h2>About me</h2><p>Hi:)</p>
+<div class="contact"><div class="prose"><h2>About me</h2><img class="idph" src="../assets/img/c/about-me-1-640.webp" width="120" height="160" alt="Piotr, Visit Poland" fetchpriority="high"><p>Hi:)</p>
 <p>My name is Piotr.</p>
 <p>I’m a regionalist and promoter of Lower Silesia and other regions and the site operates only on a non-profit basis and has an educational and cultural dimension.</p>
 <p>The main goal of this site is to promote Poland and healthy lifestyle i.e. cycling.</p>
